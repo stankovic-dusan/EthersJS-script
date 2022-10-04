@@ -1,0 +1,23 @@
+{
+  "name": "ethers.js-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "test": "npm run build && npx hardhat test",
+    "test:only": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.ts --network ropsten"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.11.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
